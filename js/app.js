@@ -4,7 +4,7 @@ window.onload = () => {
     const container = document.createElement('div');
 
 
-    logo.src = '../images/api-logo.png';
+    logo.src = './images/api-logo.png';
     logo.setAttribute('class', 'img-wrap')
     container.setAttribute('class', 'container container-flex');
     main.appendChild(logo)
