@@ -7,6 +7,8 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    word-break: break-word;
+    padding: 15px;
 }
 .card-flex{
     width: 30%;
@@ -21,6 +23,9 @@
 .pull-right{
     text-align: right;
 }
+body > .container-flex > .row > .pull-right{
+    margin: 15px;
+}
 @media (max-width: 768px){
     .container-flex{
         width: 100% ;
@@ -30,5 +35,16 @@
     .card-flex{
         width: 100% !important;
         margin: 20px 0px;
+    }
+    body > .container-flex{
+        padding: 5px;
+    }
+    body > .container-flex > .row > h2{
+        padding: 15px;
+        margin: 15px;
+    }
+    body > .container-flex > .row > .pull-right{
+        padding: 15px;
+        margin: 15px;
     }
 }

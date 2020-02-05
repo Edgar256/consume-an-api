@@ -13,7 +13,7 @@
     <title>Learning APIs</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container container-flex">
         <div class="row">
             <h2>Demo Api being consumed from <a href="#">https://ghibliapi.herokuapp.com/films</a></h2> 
             <p class="row pull-right">
