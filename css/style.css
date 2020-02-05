@@ -1,0 +1,34 @@
+.img-wrap{
+    width: 100px;
+}
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.card-flex{
+    width: 30%;
+    padding: 10px;
+    color: #808080;
+    margin: 3px;
+}
+.justify-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.pull-right{
+    text-align: right;
+}
+@media (max-width: 768px){
+    .container-flex{
+        width: 100% ;
+        display: block ;
+        flex-direction: column ;
+    }
+    .card-flex{
+        width: 100% !important;
+        margin: 20px 0px;
+    }
+}
