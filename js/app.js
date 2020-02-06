@@ -22,10 +22,10 @@ window.onload = () => {
 
             const card = document.createElement('div');
             card.setAttribute('class', 'card card-flex');
-            const title = document.createElement('h3');
+            const title = document.createElement('h4');
             title.textContent =  `Movie Title:  ${movie.title}`;
             const description = document.createElement('p');
-            const director = document.createElement('h5');
+            const director = document.createElement('h6');
             description.textContent = `Movie Description :   ${movie.description.substring(0,150)} ...`;
             description.setAttribute('class', 'justify-text');
             director.textContent = `Movie Director :   ${movie.director}`;
