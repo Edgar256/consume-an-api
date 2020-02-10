@@ -50,6 +50,10 @@ body > .container-flex > .row > .pull-right{
     background-color: #fff;
     animation: loader-inner 2s infinite ease-in;
 }
+.ps{
+    position: absolute !important;
+    margin-left: 450px;
+}
 
 @keyframes loader {
     0% {
@@ -114,5 +118,10 @@ body > .container-flex > .row > .pull-right{
     body > .container-flex > .row > .pull-right{
         padding: 15px;
         margin: 15px;
+    }
+    .ps {
+        position: absolute !important;
+        margin-left: 150px;
+        min-width: 100px;
     }
 }
