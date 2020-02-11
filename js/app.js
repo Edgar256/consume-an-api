@@ -34,10 +34,11 @@ window.onload = () => {
                             <h4 class="title">Movie Title: ${details.title}</h4>
                             <h6 class="title-2">Movie Director :   ${details.director}</h6>
                             <p class="justify-text">
-                                Movie Description :   ${limitDecription}
+                                Movie Description :   ${limitDecription} ...
                             </p>
                             <button class="btn">See more</button>
-                        </div>              `
+                        </div>              
+                    `
 
             }else{
                 html = `<p class=""> API server down, please check your network or reloading your browser </p>`
