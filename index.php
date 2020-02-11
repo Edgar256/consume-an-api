@@ -15,7 +15,7 @@
     <script src="./js/loader.js"></script>  
     <script src="./js/search.js"></script>  
     
-    <title>Learning APIs</title>
+    <title>Consuming APIs</title>
 </head>
 <body>
     <div class="container container-flex">
