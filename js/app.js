@@ -19,6 +19,7 @@ window.onload = () => {
     var data = JSON.parse(this.response)
     // console.log(Object.values(data),Object.keys(data))
     let html = ``
+    // let fullhtml = ``
 
     if (request.status >= 200 && request.status < 400) {
 
@@ -39,6 +40,18 @@ window.onload = () => {
                             <button class="btn">See more</button>
                         </div>              
                     `
+                // fullhtml +=`
+                //     <div class="card card-flex card-100">
+                //         <h4 class="title">Movie Title: ${details.title}</h4>
+                //         <h6 class="title-2">Movie Director :   ${details.director}</h6>
+                //         <p class="justify-text">
+                //             Movie Description :   ${details.description}                       
+                //         </p>
+                //         <button class="btn">See more</button>
+                //     </div>              
+                // `
+
+                
 
             }else{
                 html = `<p class=""> API server down, please check your network or reloading your browser </p>`
@@ -46,7 +59,10 @@ window.onload = () => {
             }            
         })
 
+        console.log(data)
+
         $('#comps').html(html)
+        // $('#fullhtml').html(fullhtml)
 
         
 

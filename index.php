@@ -39,6 +39,9 @@
 
         <div id="comps" class="container container-flex">
         </div>
+
+        <div id="fullhtml" class="container container-flex">
+        </div>
         
         <div id="root"></div>
         <div class="loader-wrapper">
