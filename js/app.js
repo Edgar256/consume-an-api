@@ -1,5 +1,6 @@
 window.onload = () => {
     const main = document.getElementById('root');
+    const search = document.getElementById('search');
     const logo = document.createElement('img');
     const container = document.createElement('div');
 
@@ -7,7 +8,7 @@ window.onload = () => {
     logo.src = './images/api-logo.png';
     logo.setAttribute('class', 'img-wrap')
     container.setAttribute('class', 'container container-flex');
-    main.appendChild(logo)
+    search.appendChild(logo)
     main.append(container)
 
     var request = new XMLHttpRequest()

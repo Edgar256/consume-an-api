@@ -54,6 +54,10 @@ body > .container-flex > .row > .pull-right{
     position: absolute !important;
     margin-left: 450px;
 }
+#search{
+    display: block;
+    width: 100%;
+}
 
 @keyframes loader {
     0% {

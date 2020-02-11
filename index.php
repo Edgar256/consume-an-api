@@ -25,7 +25,7 @@
                 <a href="https://edgar256.github.io/" target="_blank">Created by Edgar Tinkamanyire</a>
             </p>
         </div>
-        <div class="row">
+        <div class="row" id="search">
             <div>
                 <span>
                     <form class="form-inline md-form form-sm active-cyan-2 mt-2 ps" >
