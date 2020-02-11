@@ -17,9 +17,40 @@ window.onload = () => {
     request.onload = function() {
     // Begin accessing JSON data here
     var data = JSON.parse(this.response)
+    // console.log(Object.values(data),Object.keys(data))
+    let html = ``
 
     if (request.status >= 200 && request.status < 400) {
-        data.forEach(movie => {
+
+        Object.keys(data).forEach((key,value) => {
+            const id = data[key]
+            const details = data[value]
+
+            if(data.length !== 0){
+                //console.log(details.description)
+                const limitDecription = details.description.substring(0,150)
+                html +=`
+                        <div class="card card-flex">
+                            <h4 class="title">Movie Title: ${details.title}</h4>
+                            <h6 class="title-2">Movie Director :   ${details.director}</h6>
+                            <p class="justify-text">
+                                Movie Description :   ${limitDecription}
+                            </p>
+                            <button class="btn">See more</button>
+                        </div>              `
+
+            }else{
+                html = `<p class=""> API server down, please check your network or reloading your browser </p>`
+                console.log('loading api data')
+            }            
+        })
+
+        $('#comps').html(html)
+
+        
+
+
+        /*data.forEach(movie => {
 
             const card = document.createElement('div');
             card.setAttribute('class', 'card card-flex');
@@ -36,8 +67,7 @@ window.onload = () => {
             card.appendChild(description)
             
             container.appendChild(card);
-            console.log(movie)
-        })
+        })*/
     } else {
         console.log('error')
     }

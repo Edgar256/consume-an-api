@@ -36,6 +36,9 @@
                 </span>
             </div>
         </div>
+
+        <div id="comps" class="container container-flex">
+        </div>
         
         <div id="root"></div>
         <div class="loader-wrapper">
@@ -44,3 +47,4 @@
     </div> 
 </body>
 </html>
+
